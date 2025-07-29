@@ -1,0 +1,216 @@
+/* Zmenšená výška hlavičky a stejné barvy jako hlavní stránka */
+header {
+    background-color: #0a0d10; /* Odstraněno !important */
+    color: white; /* Odstraněno !important */
+    padding: 20px 0; /* Odstraněno !important */
+    text-align: center;
+    height: 200px;
+    display: flex; /* Přidáno pro vertikální centrování nadpisu */
+    align-items: center; /* Přidáno pro vertikální centrování nadpisu */
+    justify-content: center; /* Přidáno pro horizontální centrování nadpisu */
+}
+
+/* Nadpis hlavičky – větší, ale ne příliš */
+header h1 {
+    font-size: 2.2em; /* Odstraněno !important */
+    margin: 0; /* Odstraněno !important */
+}
+
+/* Tělo stránky – stejná cihlová barva */
+body {
+    background-color: #655f5d; /* Odstraněno !important */
+    font-family: Arial, sans-serif;
+    color: #000; /* Ponecháno černé, jak jsi měl */
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    /* Důležité: Přidáno dostatečné spodní odsazení pro pevné prvky (tlačítko, copyright) */
+    /* Zajišťuje, že obsah nebude skrytý pod těmito prvky, zvláště na mobilu */
+    padding-bottom: 120px; /* Upraveno pro lepší prostor */
+}
+
+/* Obal kolem sekce – centrovaný a dobře čitelný */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    text-align: left;
+    line-height: 1.6; /* Přidáno pro lepší čitelnost textu v kontejneru */
+}
+
+/* !!! Důležitá úprava: POUŽIJ TŘÍDU NA ODSTAVEC V HTML !!! */
+/* Ponechal jsem původní styly pro 'p', ale DŮRAZNĚ doporučuji použít třídu */
+/* Například: <p class="main-content-paragraph">Tvůj text zde...</p> */
+/* Pokud bys tento styl použil jen na JEDEN konkrétní odstavec, zabránilo by se */
+/* nechtěnému stylování VŠECH odstavců na budoucích stránkách. */
+/* Pokud trváš na 'p', pak se tyto styly aplikují na KAŽDÝ <p> tag. */
+p {
+    color: black;
+    text-align: justify;
+    max-width: 1500px;
+    margin: 40px auto;
+    font-size: 22px;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+}
+
+/* Patička - Sjednocené styly pro celou patičku */
+footer {
+    text-align: center;
+    color: black;
+    font-size: 19px;
+    padding: 10px 0 20px 0;
+    /* Níže jsou přesunuty a sjednoceny původně roztroušené styly patičky */
+    background-color: transparent; /* Původní požadavek na transparentní pozadí patičky */
+    box-shadow: none; /* Původní požadavek na odstranění stínu */
+    border-radius: 0; /* Původní požadavek na odstranění zaoblených rohů */
+    margin: 0; /* Původní požadavek na odstranění okrajů */
+    /* Důležité: Pokud jsou uvnitř patičky pevné elementy (copyright, button), může být nutné */
+    /* zajistit, aby patička nebyla těmito prvky ovlivněna. */
+}
+
+footer a:hover {
+    background-color: #0056b3; /* Zachováno, jak jsi měl */
+}
+
+/* TLAČÍTKO ZPĚT */
+.back-button {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #0e0d0d;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-button:hover {
+    background-color: #002db3;
+    transform: translateY(-2px);
+}
+
+/* Copyright v patičce */
+.copyright {
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    font-size: 0.8rem;
+    color: #444;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 6px 12px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+/* Sjednocené a upravené MEDIA QUERIES pro responsivitu */
+/* Původní media queries byly roztříštěné a měly konflikty. */
+/* Nyní jsou sjednocené a logicky uspořádané. */
+@media (max-width: 768px) {
+    /* Obecné úpravy pro tablety a menší desktopy */
+    header {
+        height: 150px; /* Mírně menší výška hlavičky */
+    }
+    header h1 {
+        font-size: 1.8em; /* Menší nadpis */
+    }
+    .container {
+        margin: 30px auto; /* Menší okraje kontejneru */
+        padding: 25px 30px; /* Menší vnitřní odsazení */
+        max-width: 95%; /* Využije více šířky na menších obrazovkách */
+    }
+    body {
+        font-size: 20px; /* Mírně menší základní písmo */
+        padding-bottom: 120px; /* Zajištění dostatečného prostoru dole */
+    }
+    p { /* Styly pro odstavce na menších obrazovkách */
+        font-size: 20px;
+        margin: 20px auto; /* Menší okraje */
+        padding: 15px; /* Menší odsazení */
+        min-height: auto; /* Zruší pevnou minimální výšku, aby se obsah nelámal */
+        max-width: 95%; /* Využije více šířky */
+    }
+    footer {
+        font-size: 17px;
+        padding: 15px 0;
+    }
+
+    /* Úpravy pro copyright a tlačítko Zpět na menších obrazovkách */
+    .copyright {
+        bottom: 25px; /* Mírně posunuto nahoru */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        width: auto; /* Důležité: necháme šířku automatickou */
+        white-space: nowrap; /* Zabrání zalomení, pokud text není moc dlouhý */
+        max-width: calc(100% - 40px); /* Omezí šířku, aby se vešlo na obrazovku */
+        box-sizing: border-box; /* Zajištění správného výpočtu šířky s paddingem */
+    }
+
+    .back-button {
+        bottom: 65px; /* Posunuto nad copyright, aby bylo vidět */
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto; /* Zruší pravé zarovnání */
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        width: calc(100% - 40px); /* Roztáhne se na šířku obrazovky */
+        text-align: center; /* Vycentruje text tlačítka */
+        box-sizing: border-box; /* Zajištění správného výpočtu šířky s paddingem */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Úpravy pro velmi malé telefony */
+    header {
+        height: 120px;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    body {
+        font-size: 16px;
+        padding-bottom: 100px; /* Mírně menší padding pro menší displeje */
+    }
+    .container {
+        padding: 15px;
+        margin: 15px auto;
+    }
+    p {
+        font-size: 16px;
+        padding: 10px;
+        margin: 15px auto;
+    }
+    footer {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .back-button {
+        bottom: 50px; /* Nižší pozice, pokud je obrazovka malá */
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+    .copyright {
+        bottom: 10px;
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+}

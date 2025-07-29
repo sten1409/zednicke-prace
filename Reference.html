@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reference | Zednické práce Ladislav Gerspitzer</title>
+  <meta name="description" content="Ukázky zednických a malířských prací - Ladislav Gerspitzer." />
+  <link rel="stylesheet" href="Untitled-1.css" />
+  <link rel="stylesheet" href="Reference.css" />
+</head>
+<body id="top">
+
+<header>
+  <h1>Reference</h1>
+</header>
+<main>
+  <section id="galerie" style="margin-top: 40px;">
+    <div class="gallery">
+      <img src="SK.jpg" alt="Nová Koupelna" loading="lazy" />
+      <img src="nove_lino.jpg" alt="nové lino" loading="lazy" />
+      <img src="nove_lino2.jpg" alt="nové lino" loading="lazy" />
+      <img src="nove_lino3.jpg" alt="nové lino" loading="lazy" />
+      <img src="nova_koupelna.jpg" alt="nová koupelna" loading="lazy" />
+      <img src="koupelna.jpg" alt="koupelna" loading="lazy" />
+      <img src="koupelna2.jpg" alt="koupelna" loading="lazy" />
+      <img src="koupelna3.jpg" alt="koupelna" loading="lazy" />
+      <img src="hotove_lino.jpg" alt="nové lino" loading="lazy" />
+      <img src="hotova_koupelna.jpg" alt="koupelna" loading="lazy" />>
+      <img src="obrazek28.jpg" alt="Koupelna" loading="lazy" />
+    </div>
+  </section>
+  <!-- Tlačítko zpět -->
+  <div style="text-align:center; margin: 30px 0;">
+    <a href="navrh_webu1.html" class="btn">← Zpět na hlavní stránku</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Zednické práce Ladislav Gerspitzer | Vytvořeno s důrazem na kvalitu
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; cursor:pointer;">
+  <img src="" alt="Zvětšený obrázek" style="max-width:90%; max-height:90%;" />
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = lightbox.querySelector('img');
+  const galleryImages = document.querySelectorAll('.gallery img');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+  });
+</script>
+
+</body>
+</html>

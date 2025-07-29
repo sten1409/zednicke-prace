@@ -1,0 +1,96 @@
+/* Zmenšená výška hlavičky a stejné barvy jako hlavní stránka */
+header {
+  color: white !important;
+  padding: 20px 0 !important;
+  text-align: center;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-image: url("cenik.png");
+}
+
+/* Nadpis hlavičky – větší, ale ne příliš */
+header h1 {
+  font-size: 3.2em !important;
+  margin: 0 !important;
+  text-transform: none !important;
+}
+
+/* Tělo stránky – stejná cihlová barva */
+body {
+  background-color: #655f5d !important;
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Obal kolem sekce – centrovaný a dobře čitelný */
+.container {
+  max-width: 1600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > div {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;       /* nebo jiná šířka podle potřeby */
+  padding: 4px 0;
+}
+
+.container > div > span:first-child {
+  flex: 1 0 250px;    /* pevná šířka pro popis */
+  white-space: nowrap;
+}
+
+.container > div > span:last-child {
+  flex: 0 0 auto;
+  min-width: 120px;
+  text-align: right;
+}
+
+
+/* Seznam služeb */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 25px;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+
+/* Odsazení textu pod seznamem */
+section p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* Tlačítko zpět */
+footer a {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+footer a:hover {
+  background-color: #0056b3;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,78 @@
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header {
+ height: 100px; 
+}
+.btn:hover {
+  background-color: #555;
+}
+
+.reference img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Menší obrazovky */
+@media (max-width: 768px) {
+  .reference img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .reference img {
+    max-width: 60%;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;          /* mezera mezi obrázky */
+  justify-content: center; /* vycentrovat obrázky */
+}
+
+.gallery img {
+  flex: 1 1 180px;   /* obrázky zabírají minimálně 180px, ale mohou růst */
+  max-width: 220px;  /* maximální šířka obrázku */
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px; /* případně zaoblení rohů */
+}
+
+header h1 {
+  font-size: 40px !important;
+  font-weight: bold !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+
+@media (max-width: 1024px) {
+  .reference img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reference img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .reference img {
+    max-width: 60%;
+  }
+}

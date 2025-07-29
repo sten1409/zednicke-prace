@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zednické práce Ladislav Gerspitzer</title>
+  <meta name="description" content="Zednické práce Ladislav Gerspitzer - spolehlivé zednické a malířské práce, rekonstrukce bytových jader, nové omítky a další." />
+  <link rel="stylesheet" href="Untitled-1.css" />
+   <style>
+/* Výchozí styl pro desktop – plovoucí widget */
+.nejremeslnici-widget {
+  position: fixed;
+  bottom: 6px;
+  left: 30px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+  height: 60px;
+  font-family: Arial, sans-serif;
+}
+
+/* Obrázek a tlačítko */
+.nejremeslnici img {
+  max-width: 250px;
+  height: 100px;
+  border-radius: 5px;
+  display: block;
+}
+
+.widget-button {
+  background-color: #0026ff;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.widget-button:hover {
+  background-color: #0056b3;
+}
+
+/* ✅ Úprava pro malá zařízení */
+@media (max-width: 600px) {
+  .nejremeslnici-widget {
+    bottom: 110px; /* větší odsazení od spodního okraje */
+    left: 300px;
+    transform: translateX(-50%);
+    height: auto;
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .fb-widget img {
+    height: auto;
+  }
+   
+  @media (max-width: 900px) {
+  .nejremeslnici-widget {
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+  </style>
+</head>
+<body id="top">
+<header>
+  <a href="tel:+420773474935" class="contact-phone">
+    📞 +420 773 474 935
+  </a>
+  <h1>Zednické práce</h1>
+  <img src="logo LG.jpeg" alt="logo" class="logo" />
+  <p>Spolehlivost • Kvalita • Férová cena</p>
+</header>
+<nav>
+  <a href="#sluzby" class="sluzby">Služby</a>
+  <a href="#galerie" class="galerie">Galerie</a>
+  <a href="#kontakt" class="kontakt">Kontakt</a>
+  <a href="kontaktni_formular.html" class="formular">Kontaktní formulář</a>
+  <a href="cenik.html" class="cenik">Ceník</a>
+  <a href="Reference.html" class="reference">Reference</a>
+  <a href="O_me.html" class="o-me">O mě</a>
+</nav>
+
+<div class="container">
+  <section id="sluzby">
+    <h2>Moje služby</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Zednické práce</h3>
+        <img src="zednicke_prace.png" alt="Zednické práce - zdění příček a opravy" />
+        <p>Poskytuji zednické práce od drobných oprav až po rozsáhlé stavební úpravy. Provádím zdění příček, vyzdívky, opravy omítek, betonování podlah a další stavební zásahy. Vše s důrazem na kvalitu, přesnost a dodržení termínů. Zakládám si na čisté práci a spolehlivém přístupu.</p>
+      </div>
+      <div class="service">
+        <h3>Malířské práce</h3>
+        <img src="malirske_prace.png" alt="Malíř při práci - malování stěn" />
+        <p>Poskytuji profesionální malířské práce včetně přípravy povrchů, penetrací, malování interiérů a exteriérů. Používám kvalitní barvy a techniky, které zajišťují dlouhodobou trvanlivost a krásný vzhled vašich prostor.</p>
+      </div>
+      <div class="service">
+        <h3>Nové omítky</h3>
+        <img src="nove_omitky.png" alt="Nové omítky - vápenné, sádrové a silikonové" />
+        <p>Specializuji se na aplikaci nových omítek, ať už vápenných, sádrových nebo silikonových, které dokonale ochrání a zkrášlí vaše stěny. Dbám na rovnoměrnost, pevnost a estetiku výsledného povrchu.</p>
+      </div>
+      <div class="service">
+        <h3>Rekonstrukce bytových jader</h3>
+        <img src="rekonstrukce_bytových_jader.png" alt="Rekonstrukce bytových jader - bourací a instalační práce" />
+        <p>Kompletní rekonstrukce bytových jader na míru, zahrnující bourací práce, instalace nových rozvodů, obklady, dlažby a instalatérské práce. Vše provádím s důrazem na preciznost, funkčnost a estetiku.</p>
+      </div>
+      <div class="service">
+        <h3>Hodinový manžel</h3>
+        <img src="hodinovy_manzel.png" alt="Hodinový manžel - montáže a drobné opravy" />
+        <p>Nabízím služby hodinového manžela pro menší opravy a údržbu v domácnosti – montáže nábytku, drobné elektropráce, instalace polic či závěsů a další běžné domácí práce, které šetří váš čas a starosti.</p>
+      </div>
+    </div>
+  </section>
+  <section id="galerie" style="margin-top: 40px;">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="obrazek1.jpg" alt="Zednické práce - pokládka dlažby" loading="lazy" />
+      <img src="obrazek2.jpg" alt="Malířské práce - nátěr stěn" loading="lazy" />
+      <img src="obrazek3.jpg" alt="Nové omítky ve starší budově" loading="lazy" />
+      <img src="obrazek4.jpg" alt="Rekonstrukce bytového jádra" loading="lazy" />
+      <img src="obrazek5.jpg" alt="Hodinový manžel - instalace garnýže" loading="lazy" />
+      <img src="obrazek6.jpg" alt="Venkovní práce" loading="lazy" />
+      <img src="obrazek7.jpg" alt="Zednické práce - pokládka dlažby" loading="lazy" />
+      <img src="obrazek8.jpg" alt="Malířské práce - nátěr stěn" loading="lazy" />
+      <img src="obrazek9.jpg" alt="Nové omítky ve starší budově" loading="lazy" />
+      <img src="obrazek10.jpg" alt="Rekonstrukce bytového jádra" loading="lazy" />
+      <img src="obrazek11.jpg" alt="Hodinový manžel - instalace garnýže" loading="lazy" />
+      <img src="obrazek12.jpg" alt="Venkovní práce" loading="lazy" />
+      <img src="obrazek13.jpg" alt="Zednické práce - pokládka dlažby" loading="lazy" />
+      <img src="obrazek14.jpg" alt="Malířské práce - nátěr stěn" loading="lazy" />
+      <img src="obrazek15.jpg" alt="Nové omítky ve starší budově" loading="lazy" />
+      <img src="obrazek16.jpg" alt="Rekonstrukce bytového jádra" loading="lazy" />
+      <img src="obrazek17.jpg" alt="Hodinový manžel - instalace garnýže" loading="lazy" />
+      <img src="obrazek19.jpg" alt="Zednické práce - pokládka dlažby" loading="lazy" />
+      <img src="obrazek20.jpg" alt="Malířské práce - nátěr stěn" loading="lazy" />
+      <img src="obrazek21.jpg" alt="Nové omítky ve starší budově" loading="lazy" />
+      <img src="obrazek22.jpg" alt="Rekonstrukce bytového jádra" loading="lazy" />
+      <img src="obrazek23.jpg" alt="Hodinový manžel - instalace garnýže" loading="lazy" />
+      <img src="obrazek24.jpg" alt="Venkovní práce" loading="lazy" />
+      <img src="obrazek25.jpg" alt="Nové omítky ve starší budově" loading="lazy" />
+      <img src="obrazek26.jpg" alt="Rekonstrukce bytového jádra" loading="lazy" />
+      <img src="obrazek27.jpg" alt="Hodinový manžel - instalace garnýže" loading="lazy" />
+      <img src="rekonstrukce_podlahy.jpg" alt="podlaha před rekonstrukcí" loading="lazy" />
+      <img src="rekonstrukce_podlahy2.jpg" alt="podlaha před rekonstrukcí" loading="lazy" />
+      <img src="rekonstrukce_podlahy3.jpg" alt="podlaha před rekonstrukcí" loading="lazy" />
+      <img src="rekonstrukce_podlahy4.jpg" alt="podlaha před rekonstrukcí" loading="lazy" />
+      <img src="rekonstrukce_koupelna.jpg" alt="koupelna před rekonstrukcí" loading="lazy" />
+      <img src="uprava_podlahy.jpg" alt="Zednické práce - pokládka dlažby" loading="lazy" />
+      <img src="pokladani_lina.jpg" alt="pokladání nového lina" loading="lazy" />
+      <img src="podlaha.jpg" alt="stará podlaha" loading="lazy" />
+      <img src="stara_podlaha.jpg" alt="podlaha před úpravou" loading="lazy" />
+      <img src="dvere.jpg" alt="dveře" loading="lazy" />
+      <img src="omtka.jpg" alt="malování" loading="lazy" />
+      <img src="uprava_omitky.jpg" alt="Malířské práce - nátěr stěn" loading="lazy" />
+      <img src="malovani_zdi.jpg" alt="malířské práce" loading="lazy" />
+      <img src="malovani.jpg" alt="malířské práce" loading="lazy" />
+    </div>
+  </section>
+  <section id="kontakt" style="margin-top: 40px;">
+    <h2>Kontakt</h2>
+    <ul>
+      <li><strong>Ladislav Gerspitzer</strong></li>
+      <li><strong>Telefon:</strong> +420 773 474 935</li>
+      <li><strong>Email:</strong> zednickesluzby@email.cz</li>
+      <li><strong>Adresa:</strong> Horní Dunajovice 65, PSČ 67134</li>
+    </ul>
+  </section>
+</div>
+<a href="#top" id="btnTop">↑ Nahoru</a>
+<footer>
+  &copy; 2025 Zednické práce Ladislav Gerspitzer | Vytvořeno s důrazem na kvalitu
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; cursor:pointer;">
+  <img src="" alt="Zvětšený obrázek" style="max-width:90%; max-height:90%;" />
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = lightbox.querySelector('img');
+  const galleryImages = document.querySelectorAll('.gallery img');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+  });
+</script>
+  <div class="nejremeslnici-widget">
+    <a class="widget-button" href="https://www.nejremeslnici.cz/profil/314191-ladislav-gerspitzer" target="_blank">
+      Ukázat moje reference
+</a>
+</body>
+</html>

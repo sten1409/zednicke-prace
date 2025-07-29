@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>O mě</title>
+  <meta name="description" content="Ceník služeb - Zednické a malířské práce, rekonstrukce a další služby." />
+  <link rel="stylesheet" href="Untitled-1.css" />
+  <link rel="stylesheet" href="O_me.css" />
+
+</head>
+<body id="top">
+  <header>
+    <h1>O mě</h1>
+  </header>
+ <p>
+Již více než 15 let se věnuji zednickým a malířským pracím s důrazem na kvalitu a spolehlivost.  
+Specializuji se na rekonstrukce bytových jader, nové omítky, pokládku dlažby a další stavební práce.  
+Mou prioritou je vždy precizní provedení a maximální spokojenost zákazníka.  
+Pracuji s moderními materiály a technologiemi, které zaručují dlouhou životnost výsledku.  
+Díky mnoha realizovaným projektům mám bohaté zkušenosti i s náročnějšími zakázkami. Na moje recenze se můžete podívat na portálu nejremeslnici.cz
+</p>
+<footer>
+  <a href="navrh_webu1.html" class="back-button">Zpět na hlavní stránku</a>
+  <div class="copyright">
+    &copy; 2025 Zednické práce Ladislav Gerspitzer | Vytvořeno s důrazem na kvalitu
+  </div>
+</footer>
+<script>
+    document.querySelectorAll("p").forEach(p => {
+      console.log("Před úpravou text:", JSON.stringify(p.innerText));
+      p.innerText = p.innerText.replace(/\s+/g, ' ').trim();
+      console.log("Po úpravě text:", JSON.stringify(p.innerText));
+    });
+  </script>
+</body>
+</html>
+

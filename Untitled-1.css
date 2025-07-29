@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #7b7775;
+  background-image: repeating-radial-gradient(circle at 50% 50%, transparent 0, transparent 4px, rgba(51, 110, 236, 0.015) 5px, transparent 6px);
+  line-height: 1.2;
+  filter: contrast(1.05) brightness(1.05);
+}
+header {
+  background: linear-gradient(135deg, #2342f0, #224bee);
+  color: rgb(39, 35, 35) !important;
+  padding: 50px 20px 40px;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  text-shadow: 2px 2px 4px #232efb;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-image: url("wall2.jpg");
+}
+/* Logo – vlevo nahoře */
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 240px;
+  height: auto;
+  object-fit: contain;
+  z-index: 1000;
+}
+/* Telefon – vpravo nahoře */
+.contact-phone {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: rgb(20, 19, 19);
+  background-color: rgba(242, 244, 252, 0.7);
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none; /* tady zrušíš podtržení */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  text-shadow: 3px 3px 6px #000000;
+  color: rgb(0, 0, 0) !important;
+  position: relative;
+  z-index: 1;
+}
+header p {
+  font-size: 2.3em;
+  margin-top: 8px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 2px #6b482f;
+  color: rgb(5, 6, 6) !important;
+  text-transform: capitalize;
+}
+nav {
+  background: #ecedf6;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: inset 0 -4px 8px rgba(1, 1, 1, 0.581);
+  font-weight: 600;
+  border-top: 4px solid #191a1b;
+  border-bottom: 4px solid #17181a;
+}
+nav a {
+  color: rgb(41, 37, 37) !important; /* toto je textová barva všech odkazů */
+  padding: 18px 25px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 2px;
+  transition: background 0.3s, color 0.3s;
+  border-right: 1px solid #000000;
+  text-shadow: 1px 1px 0 #1d1e1f;
+}
+
+/* Specifické barvy pozadí pro jednotlivé odkazy */
+.formular {
+  background-color: rgb(251, 8, 8);
+  color: rgb(44, 38, 38) !important;
+  font-size: 20px; /* zvětšení písma */
+}
+.cenik {
+  background-color: rgb(7, 52, 253);
+  color: rgb(9, 11, 26) !important;
+  font-size: 20px;
+}
+.reference {
+  background-color: rgb(238, 227, 226);
+  color: rgb(15, 15, 16) !important;
+  font-size: 20px;
+}
+.o-me {
+  background-color: rgb(48, 48, 244);
+  color: rgb(15, 13, 13) !important;
+  font-size: 20px;
+}
+
+.galerie {
+  background-color: rgb(247, 248, 255);
+  color: rgb(24, 21, 21) !important;
+  font-size: 20px;
+}
+
+
+nav a:last-child {
+  border-right: none;
+}
+nav a:hover,
+nav a:focus {
+  background: #9c7346;
+  color: #dee5ec;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px #442e0f;
+}
+.container {
+  max-width: 1100px;
+  margin: 40px auto 60px auto;
+  padding: 30px 25px;
+  background: #ebe5e5;
+  border-radius: 10px;
+  box-shadow: inset 0 0 15px #d8d9db;
+  border: 3px solid #f8e9f3;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(122, 82, 51, 0.1) 6px, transparent 7px);
+  color: rgb(10, 9, 9) !important;
+}
+h2 {
+  text-align: center;
+  color: rgb(0, 0, 0) !important;
+  font-family: 'Georgia', serif;
+  font-size: 2.4em;
+  margin-top: 0;
+  text-shadow: 1px 1px 3px #151618;
+  letter-spacing: 1.5px;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+}
+.service {
+  background: #ced9ff;
+  border-left: 8px solid #f2dfe4;
+  padding: 25px 30px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 10px #e5e7fe;
+  font-size: 1.5em;
+  color: rgb(159, 148, 132) !important;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  border: 2px solid #eaeaf3;
+  border-radius: 8px;
+}
+.service h3 {
+  margin-top: 0;
+  color: rgb(7, 6, 6) !important;
+  font-weight: 700;
+  font-size: 1.6em;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 1px #202122;
+}
+.service p {
+  margin: 10px 0 0;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(11, 10, 10) !important;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 35px;
+  background: #d6dadf;
+  padding: 25px;
+  border-radius: 12px;
+  background-image: repeating-linear-gradient(135deg, rgba(106, 69, 35, 0.05), rgba(106, 69, 35, 0.05) 10px, transparent 10px, transparent 20px);
+  box-shadow: 0 6px 20px rgba(122, 82, 51, 0.35);
+  color: rgb(201, 207, 227) 
+}
+.gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 3px solid #fbf1d6;
+  filter: contrast(1.05) brightness(1.02);
+}
+.gallery img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.9);
+  border-color: #d97e00;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 40px;
+  background: #e5e8ff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid #7a5233;
+  box-shadow: inset 0 0 20px #a97449;
+  font-family: 'Georgia', serif;
+  color: white !important;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(122, 82, 51, 0.1) 7px, transparent 8px);
+}
+form label {
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: 0.7px;
+  color: white !important;
+}
+form input[type="text"],
+form textarea {
+  padding: 14px;
+  font-size: 1em;
+  border: 2px solid #7a5233;
+  border-radius: 6px;
+  font-family: 'Georgia', serif;
+  color: white !important;
+  background-color: #3a2e24;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  box-shadow: inset 0 0 5px #a97449;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #d97e00;
+  outline: none;
+  background-color: #4b3a2b;
+  box-shadow: 0 0 8px #d97e00;
+  color: white !important;
+}
+
+button {
+  background-color: #7a5233;
+  border: none;
+  padding: 15px;
+  color: white !important;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  align-self: center;
+  box-shadow: 0 4px 12px rgba(217, 126, 0, 0.7);
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 2px #4d3210;
+}
+
+button:hover {
+  background-color: #d97e00;
+  box-shadow: 0 6px 20px rgba(217, 126, 0, 0.9);
+}
+
+footer {
+  background: #dcddde;
+  color: rgb(25, 26, 26) !important;
+  text-align: center;
+  padding: 25px 10px;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  border-top: 4px solid #d8eaff;
+  box-shadow: inset 0 6px 10px rgba(255, 255, 255, 0.1);
+  text-shadow: 1px 1px 2px #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .logo,
+  .contact-phone {
+    position: static;
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .contact-phone {
+    font-size: 1.2em;
+    margin-top: 8px;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+    margin-top: 20px;
+  }
+
+  header p {
+    font-size: 1.4em;
+  }
+
+  .container {
+    padding: 25px 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+    border-top: 1px solid #9c7346;
+    border-right: none;
+  }
+}
+
+#lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(30, 20, 10, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(217, 126, 0, 0.8);
+  filter: contrast(1.1);
+}
+
+#kontakt {
+  font-size: 24px;  /* nebo jiná velikost dle potřeby */
+}
+
+.sluzby {
+  background-color: rgb(227, 12, 12);
+  color: black;
+  padding: 12px 16px;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.kontakt {
+  background-color: blue;
+  color: white;
+  padding: 12px 16px;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.service {
+  position: relative;
+  padding-top: 20px;
+  padding-right: 220px; /* rezerva pro obrázek napravo */
+  margin-bottom: 40px;
+}
+
+.service img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 200px;
+  height: auto;
+  border-top: 2px solid #ccc;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding-right: 0;
+    padding-top: 20px;
+  }
+
+  .service img {
+    position: static;
+    display: block;
+    margin: 10px auto 0 auto;
+    max-width: 80%;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+  }
+}
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+#btnTop:hover {
+  background: #555;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  #btnTop {
+    bottom: 6px; /* Zvětšíme odsazení, aby tlačítko nezasahovalo do jiného obsahu */
+  }
+}
+
+@media (max-width: 479px) {
+  #btnTop {
+    bottom: -60px; /* Pro velmi malé displeje ještě více zvýšíme pozici tlačítka */
+
+  }
+
