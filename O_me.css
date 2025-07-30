@@ -208,14 +208,13 @@ footer a:hover {
         font-size: 0.8rem;
         padding: 8px 15px;
     }
-    .copyright {
+     .copyright {
         bottom: 25px;
         font-size: 0.8em;
         padding: 8px 0px;
-        margin-left: -140px;
+        margin-right: 1200px;
         color: #2b2a2a;
-        background-color: rgba(255, 223, 223, 0.85);
-        max-width:2px;
+        background-color: rgba(248, 242, 242, 0.85);
         padding-left: 8px 320px;
     }
 }
