@@ -94,3 +94,19 @@ header h1 {
   text-transform: uppercase;
 }
 
+@media (min-width: 200px) and (max-width: 1000px) {
+  .container > div {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container > div span {
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: fit-content;
+    white-space: nowrap;
+    margin-bottom: 4px;
+  }
+}

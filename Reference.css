@@ -12,8 +12,9 @@
 }
 
 header {
- height: 100px; 
+  height: 100px; 
 }
+
 .btn:hover {
   background-color: #555;
 }
@@ -24,32 +25,19 @@ header {
   display: block;
 }
 
-/* Menší obrazovky */
-@media (max-width: 768px) {
-  .reference img {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .reference img {
-    max-width: 60%;
-  }
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;          /* mezera mezi obrázky */
-  justify-content: center; /* vycentrovat obrázky */
+  gap: 8px;
+  justify-content: center;
 }
 
 .gallery img {
-  flex: 1 1 180px;   /* obrázky zabírají minimálně 180px, ale mohou růst */
-  max-width: 220px;  /* maximální šířka obrázku */
+  flex: 1 1 180px;
+  max-width: 220px;
   height: auto;
   object-fit: cover;
-  border-radius: 4px; /* případně zaoblení rohů */
+  border-radius: 4px;
 }
 
 header h1 {
@@ -58,6 +46,7 @@ header h1 {
   color: rgb(0, 0, 0) !important;
 }
 
+/* Media Queries */
 
 @media (max-width: 1024px) {
   .reference img {
@@ -74,5 +63,12 @@ header h1 {
 @media (max-width: 480px) {
   .reference img {
     max-width: 60%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 1000px) {
+  header h1 {
+    position: relative;
+    bottom: 70px;
   }
 }
